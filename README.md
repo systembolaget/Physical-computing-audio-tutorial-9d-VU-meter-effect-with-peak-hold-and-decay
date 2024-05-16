@@ -1,12 +1,12 @@
 # Physical computing audio tutorial - VU meter effect with peak hold and decay
 
-Make your products responsive to music, speech or noise with RGB LEDs
+Make your products responsive to music, speech or noise with RGB LEDs and FastLED
 
 ### Setup
 
 You can click the image to play the associated YouTube video
 
-[![Alt text](Assets/9d%20result.jpg)](https://youtu.be/9S3FQAITdck/)
+[![Alt text](Assets/9d%20result.jpg)](https://youtu.be/xhTL8WmXV7c/)
 
 ### Schematic
 
