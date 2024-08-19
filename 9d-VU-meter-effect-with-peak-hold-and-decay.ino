@@ -87,14 +87,14 @@ void loop()
   newPeakL = constrain(map(audioFilteredL, peakLevelLow, peakLevelHigh, 0, numLeds), 0, numLeds) - 1; newPeakR = constrain(map(audioFilteredR, peakLevelLow, peakLevelHigh, 0, numLeds), 0, numLeds) - 1; // Set new peak value
   //Serial.print("newPeakL:"); Serial.println(newPeakL);
 
-  peakHoldAndDelayL(); peakHoldAndDelayR(); // Update peak hold and decay
+  peakHoldAndDecayL(); peakHoldAndDecayR(); // Update peak hold and decay
 
   lightLEDs(); // Light the LEDs
 
   checkPotentiometers(); // Check if input dynamics or brightness were adjusted
 }
 
-void peakHoldAndDelayL() // Peak hold and decay algorithm
+void peakHoldAndDecayL() // Peak hold and decay algorithm
 {
   // Only if the new peak value is larger than the previous peak value,
   // it is set to the new peak value. Then we take the time of when that
@@ -133,7 +133,7 @@ void peakHoldAndDelayL() // Peak hold and decay algorithm
   }
 }
 
-void peakHoldAndDelayR()
+void peakHoldAndDecayR()
 {
   if (newPeakR >= previousPeakR)
   {
