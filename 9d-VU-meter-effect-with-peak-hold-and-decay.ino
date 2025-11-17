@@ -1,7 +1,7 @@
 // Tutorial 9d. VU meter effect with peak hold and decay
 
 // Main parts: See tutorials 9a or 9b; here we use set-up 9a, in the
-// stereo conviguration, and two potentiometers, see schematic on GitHub
+// stereo configuration, and two potentiometers, see schematic
 
 // Library required to drive RGB LEDs; use the latest version
 #include "FastLED.h"
